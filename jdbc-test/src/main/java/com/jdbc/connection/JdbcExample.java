@@ -9,14 +9,14 @@ import java.sql.SQLException;
 public class JdbcExample {
 	public static void main(String args[]) {
 		try {
-			String query = "Select * from student";
+	
 			String url = "jdbc:postgresql://localhost:5432/postgres";
 			String username = "postgres";
 			String password = "ajay@4321";
 
 			Connection con = DriverManager.getConnection(url, username, password);
 			System.out.println("databse connection" + con);
-		//	String query = "Select * from student";
+			String query = "Select * from student";
 			PreparedStatement preparedStatement = con.prepareStatement(query);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			while (resultSet.next()) {
