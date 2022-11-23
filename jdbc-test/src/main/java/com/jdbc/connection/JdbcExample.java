@@ -10,7 +10,6 @@ public class JdbcExample {
 	public static void main(String args[]) {
 		try {
 			String query = "Select * from student";
-			String driver = "org.postgresql.Driver";
 			String url = "jdbc:postgresql://localhost:5432/postgres";
 			String username = "postgres";
 			String password = "ajay@4321";
